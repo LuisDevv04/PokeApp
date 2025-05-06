@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="website-name">
+        <img src="./assets/Poke_logo.png" alt="Pokemon Logo" width="200px">
+        <h1 class="header">Top 5 <span>strangest</span> Pokemons</h1>
+        <h2 class="subheader">haven´t heard about them? what a relief!</h2>
+    </div>
+
+    <div class="flexcontainer">
+        <div class="pokemon pokemon1">
+            <div class="pokemon-image">
+                <img src="https://img.pokemondb.net/artwork/large/trubbish.jpg" alt="Trubbish" />
+
+            </div>
+            <div class="pokemon-info">
+                <h3 class="pokemon-name"> Trubbish</h3>
+                <h4 class="pokemon-description">
+                    <p>A literal bag of trash brought to life. Trubbish is born from garbage and industrial waste,
+                        releasing a foul stench when threatened. Despite its off-putting nature,
+                        it somehow has fans who find it... oddly adorable.
+                    </p>
+                </h4>
+                <div class="button-wrapper">
+                    <button class="button know-more" onclick="viewDetails(1)">know Trubbish</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pokemon pokemon2">
+            <div class="pokemon-image">
+                <img src="https://img.pokemondb.net/artwork/large/mr-mime.jpg" alt="Mr. Mime" />
+            </div>
+            <div class="pokemon-info">
+                <h3 class="pokemon-name">Mr. Mime</h3>
+                <h4 class="pokemon-description">
+                    <p>
+                        With its humanoid shape, painted face, and invisible walls, 
+                        Mr. Mime sits deep in the uncanny valley. Its movements mimic those of a classic mime,
+                         and its psychic abilities are as unsettling as its toothy smile
+                    </p>
+                </h4>
+                <div class="button-wrapper">
+                    <button class="button know-more" onclick="viewDetails(2)">know Mr.Mime</button>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="pokemon pokemon3">
+            <div class="pokemon-image">
+                <img src="https://img.pokemondb.net/artwork/large/bruxish.jpg" alt="Bruxish" />
+            </div>
+            <div class="pokemon-info">
+                <h3 class="pokemon-name">Bruxish</h3>
+                <h4 class="pokemon-description">
+                    <p>
+                        A neon-colored fish with dazzling scales and a disturbing grin full of sharp teeth. 
+                        Bruxish uses psychic waves to stun prey, 
+                        but its clashing color palette and aggressive look make it one of the most bizarre aquatic Pokémon.
+                    </p>
+                </h4>
+                <div class="button-wrapper">
+                    <button class="button know-more" onclick="viewDetails(3)">know Bruxish</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="pokemon pokemon4">
+            <div class="pokemon-image">
+                <img src="https://www.serebii.net/swordshield/pokemon/618-g.png" alt="Galarian Stunfisk" />
+            </div>
+            <div class="pokemon-info">
+                <h3 class="pokemon-name"> Stunfisk <span class="pokemon-form">(Galarian Form)</span></h3>
+                <h4 class="pokemon-description">
+                    <p>
+                        Looking like a rusty bear trap with eyes, Galarian Stunfisk hides on the ground and clamps onto anything that steps on it. 
+                        It’s part Ground/Steel and has a troll-like nature that fits its odd appearance.
+                    </p>
+                </h4>
+                <div class="button-wrapper">
+                    <button class="button know-more" onclick="viewDetails(4)">know Stunfisk</button>
+                </div>
+            </div>
+            
+          
+        </div>
+        <div class="pokemon pokemon5">
+            <div class="pokemon-image">
+                <img src="https://img.pokemondb.net/artwork/large/porygon-z.jpg" alt="Porygon-Z" />
+            </div>
+            <div class="pokemon-info">
+                <h3 class="pokemon-name">Porygon-Z</h3>
+                <h4 class="pokemon-description">
+                    <p>
+                        A digital Pokémon that glitched out. Designed as a software upgrade to the original Porygon, 
+                        something went wrong, and Porygon-Z now behaves unpredictably, 
+                        with jerky movements and an eerie, hollow stare.
+                    </p>
+                </h4>
+                <div class="button-wrapper">
+                    <button class="button know-more" onclick="viewDetails(5)">know Porygon-Z</button>
+                </div>
+            </div>
+            
+     
+        </div>
+
+
+    </div>
+    
+    
+    
+</body>
+
+<script>
+    function viewDetails(pokemonId){
+        window.location.href = `details.html?id=${pokemonId}`;
+    }
+</script>
+</html>
